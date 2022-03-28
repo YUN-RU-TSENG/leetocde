@@ -1,0 +1,42 @@
+{
+    "name": "leetocde-101",
+    "version": "0.0.0",
+    "description": "leetcode practice",
+    "scripts": {
+        "test": "jest",
+        "format": "prettier --write .",
+        "lint": "eslint src/**/*.js",
+        "lint:fix": "eslint src/**/*.js --fix",
+        "prepare": "husky install"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/YUN-RU-TSENG/leetocde-101.git"
+    },
+    "keywords": [
+        "leetcode",
+        "javascript"
+    ],
+    "author": "ruru",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/YUN-RU-TSENG/leetocde-101/issues"
+    },
+    "homepage": "https://github.com/YUN-RU-TSENG/leetocde-101#readme",
+    "devDependencies": {
+        "@babel/core": "^7.17.5",
+        "@babel/preset-env": "^7.16.11",
+        "babel-jest": "^27.5.1",
+        "eslint": "^8.10.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-jest": "^26.1.3",
+        "husky": "^7.0.4",
+        "jest": "^27.5.1",
+        "lint-staged": "^12.3.4",
+        "prettier": "2.5.1"
+    },
+    "lint-staged": {
+        "*.js": "eslint --fix",
+        "*.{js,json,md}": "prettier --write"
+    }
+}
