@@ -16,7 +16,7 @@
  * @param {Number} target
  * @return {Array}
  */
-export default function twoSum(numbers, target) {
+function twoSum(numbers, target) {
     if (!Array.isArray(numbers)) throw new Error()
     if (typeof target !== 'number') throw new Error()
 
@@ -28,7 +28,7 @@ export default function twoSum(numbers, target) {
     let maxIndex = numbers.length - 1
     // 2.2 再來將最小和最大數字相加，如果相加等於target，則回傳
     // 2.3 如果相加不等於target，若是大於 target 則最大值向左一格；反之則小於 target 則最小值向右一格
-    while (true) {
+    while (minIndex < maxIndex) {
         if (sortedNumbers[minIndex] + sortedNumbers[maxIndex] > target) {
             maxIndex--
         } else if (sortedNumbers[minIndex] + sortedNumbers[maxIndex] < target) {
@@ -41,3 +41,5 @@ export default function twoSum(numbers, target) {
         }
     }
 }
+
+export default twoSum
