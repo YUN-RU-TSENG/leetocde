@@ -1,9 +1,7 @@
 # Leetcode 101
 
-## 目錄
+Questions [List of Leetcode](https://leetcode.com/list/9y108oov)
 
-| 題目                                                                                                                                            | 筆記                      | 備註 |
-| ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- | ---- |
-| q1 - [Two Sum - LeetCode](https://leetcode.com/problems/two-sum/)                                                                               | [q1 note](./src/q1/q1.md) |      |
-| q2 - [Longest Substring Without Repeating Characters - LeetCode](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [q2 note](./src/q2/q2.md) |      |
-|                                                                                                                                                 |                           |      |
+- [o] q1 ver1.20220328
+- [o] q2 ver1.2020329
+- [o] q3 ver1.20220402 ver2.20220402
