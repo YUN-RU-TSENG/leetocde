@@ -1,3 +1,8 @@
+/**
+ * Returns longest palindrome in a string
+ * @param {string} string
+ * @returns {string} longest palindrome
+ */
 function longestPalindrome(string) {
     if (typeof string !== 'string') throw new Error('string is not correct type')
     if (string.length < 2) return string
@@ -18,7 +23,7 @@ function longestPalindrome(string) {
                     result = string.slice(j, i + 1)
             } else {
                 array2D[i][j] = !!(string[i] === string[j] && array2D[i - 1][j + 1])
-                if (array2D[i][j] && result.length < string.slice(j, i  + 1).length)
+                if (array2D[i][j] && result.length < string.slice(j, i + 1).length)
                     result = string.slice(j, i + 1)
             }
         }
