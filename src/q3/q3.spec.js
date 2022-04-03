@@ -1,20 +1,36 @@
-import fn from './q3.js'
+import longestPalindrome from './q3.js'
 
 describe('function longestPalindrome(string)', () => {
-    it('should throw Error, when string is not correct type', () => {
-        expect(() => fn(1)).toThrow('string is not correct type')
-        expect(() => fn(true)).toThrow('string is not correct type')
+    describe('should throw Error, when string is not correct type', () => {
+        it('longestPalindrome(1) should throw error', () => {
+            expect(() => longestPalindrome(1)).toThrow('string is not correct type')
+        })
+        it('longestPalindrome(true) should throw error', () => {
+            expect(() => longestPalindrome(true)).toThrow('string is not correct type')
+        })
     })
 
-    it('should return "", when string is ""', () => {
-        expect(fn('')).toBe('')
+    describe('should return "", when string is ""', () => {
+        it("longestPalindrome('') should return ''", () => {
+            expect(longestPalindrome('')).toBe('')
+        })
     })
 
-    it("should return palindrome, when string 's length is more than 1", () => {
-        expect(fn('babad')).toBe('bab')
-        expect(fn('cbbd')).toBe('bb')
-        expect(fn('a')).toBe('a')
-        expect(fn('aa')).toBe('aa')
-        expect(fn('aaaaabbaa')).toBe('aabbaa')
+    describe("should return palindrome, when string 's length is more than 1", () => {
+        it("longestPalindrome('babad') should return 'bab'", () => {
+            expect(longestPalindrome('babad')).toBe('bab')
+        })
+        it("longestPalindrome('cbbd') should return 'bb'", () => {
+            expect(longestPalindrome('cbbd')).toBe('bb')
+        })
+        it("longestPalindrome('babad') should return 'bab'", () => {
+            expect(longestPalindrome('babad')).toBe('bab')
+        })
+        it("longestPalindrome('aa') should return 'aa'", () => {
+            expect(longestPalindrome('aa')).toBe('aa')
+        })
+        it("longestPalindrome('aaaaabbaa') should return 'aabbaa'", () => {
+            expect(longestPalindrome('aaaaabbaa')).toBe('aabbaa')
+        })
     })
 })
