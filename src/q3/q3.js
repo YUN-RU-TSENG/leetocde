@@ -12,12 +12,7 @@ function longestPalindrome(string) {
     const table = string.split('').map(() => new Array(string.length))
 
     for (let i = 0; i < table.length; i++) {
-        table[i][i] = true
-        if (result.length < string.slice(i, i + 1).length) result = string.slice(i, i + 1)
-    }
-
-    for (let i = 0; i < table.length; i++) {
-        for (let j = 0; j < i; j++) {
+        for (let j = 0; j <= i; j++) {
             if (i - j <= 1) table[i][j] = string[i] === string[j]
             else table[i][j] = string[i] === string[j] && table[i - 1][j + 1]
 
