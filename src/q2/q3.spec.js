@@ -1,4 +1,4 @@
-import lengthOfLongestSubstring from './q2.js';
+import lengthOfLongestSubstring from './q3.js';
 
 describe('function lengthOfLongestSubstring(s)', () => {
     test('should throw Error, when s is not correct type', () => {

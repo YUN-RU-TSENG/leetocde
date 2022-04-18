@@ -1,4 +1,4 @@
-import longestPalindrome from './q3.js'
+import longestPalindrome from './q5.js'
 
 describe('function longestPalindrome(string)', () => {
     describe('should throw Error, when string is not correct type', () => {

@@ -1,4 +1,4 @@
-import getMaxArea from './q4'
+import getMaxArea from './q11'
 
 describe('function getMaxArea(height)', () => {
     describe('should throw Error, when height is not correct type', () => {
