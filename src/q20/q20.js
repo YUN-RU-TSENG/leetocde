@@ -21,5 +21,3 @@ function isValid(s) {
 
     return result.length === 0
 }
-
-isValid('()')
