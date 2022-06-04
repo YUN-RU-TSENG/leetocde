@@ -1,9 +1,10 @@
 /**
+ * 合併兩個升冪的 LinkList 成為一個新的 LinkList
  * @param {ListNode} list1 head
  * @param {ListNode} list2 head
  * @return {ListNode}
  */
-var mergeTwoLists = function (list1, list2) {
+function mergeTwoLists(list1, list2) {
     // 創建一個虛假的 linklist
     // currentFakeLinklistNode 是為了指向當前虛假的 linklist 的 next node，這樣才可以 crt.next = xxx 而不用隨著更多層 fakeLinkList.next.next.next
     let fakeLinkList = {
