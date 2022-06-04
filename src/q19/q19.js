@@ -12,7 +12,10 @@ function removeNthFromEnd(head, n) {
         fast = fast.next
     }
 
-    if (!fast) return head.next
+    if (!fast) {
+        head = head.next
+        return head
+    }
 
     while (fast.next) {
         fast = fast.next
