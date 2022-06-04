@@ -49,3 +49,6 @@ function mergeTwoLists(list1, list2) {
     return fakeLinkList.next
 }
 ```
+
+## 參考
+[Simple javascript solution - LeetCode Discuss](https://leetcode.com/problems/merge-two-sorted-lists/discuss/9963/Simple-javascript-solution)
