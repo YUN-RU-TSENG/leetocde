@@ -3,13 +3,12 @@ let combinationSum = function (candidates, target) {
     calculate(0, 0, [])
     return result
 
-
     function calculate(preventIndex, preventSum, preventArray) {
-        if(preventSum > target) return
-        if(preventSum === target) {
-            result.push(preventArray)
+        if (preventSum > target) return
+        if (preventSum === target) {
+            return result.push(preventArray)
         }
-        for(let i = preventIndex; i < candidates.length; i++) {
+        for (let i = preventIndex; i < candidates.length; i++) {
             const currentIndex = i
             const currentSum = preventSum + candidates[i]
             const currentArray = [...preventArray, candidates[i]]
@@ -17,3 +16,5 @@ let combinationSum = function (candidates, target) {
         }
     }
 }
+
+combinationSum([1, 2, 3, 4, 5], 5)
