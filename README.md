@@ -12,3 +12,4 @@ Questions [List of Leetcode](https://leetcode.com/list/9y108oov)
 -   [x] q21 `leetcode 21` [📓 note](./src/q21/index.md)
 -   [x] q23 `leetcode 23`
 - [x] q33 `leetcode 33`
+- [x] q39 `leetcode 39`
