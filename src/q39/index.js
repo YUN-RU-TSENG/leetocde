@@ -17,4 +17,3 @@ let combinationSum = function (candidates, target) {
     }
 }
 
-combinationSum([1, 2, 3, 4, 5], 5)
