@@ -15,3 +15,4 @@ Questions [List of Leetcode](https://leetcode.com/list/9y108oov)
 -   [x] q39 `leetcode 39`
 -   [x] q48 `leetcode 48`
 -   [x] q49 `leetcode 49`
+-   [x] q57 `leetcode 57`
