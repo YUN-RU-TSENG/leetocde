@@ -1,6 +1,8 @@
 # Leetcode 101
 
-Questions [List of Leetcode](https://leetcode.com/list/9y108oov)
+> 備註，後續題目將不再定期上傳，調整過目標後，目前主要使用 leetcode 官網刷題
+
+Questions [List of Leetcode](https://leetcode.com/list/9y108oov)，部分題目包含 Unit test（使用 Jest）
 
 -   [x] q1 `leetcode 1` [📓 note](./src/q1/q1.md)
 -   [x] q2 `leetcode 3` [📓 note](./src/q3/q3.md)
